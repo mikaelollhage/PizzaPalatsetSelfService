@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="PizzaPalatsetSelfService.Views.LoadExternalDataView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PizzaPalatsetSelfService.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <RelativePanel>
+        <Image
+            Source="/Assets/LoadingDataPage/VintagePlanks.jpg"
+            RelativePanel.AlignTopWithPanel="True"
+            RelativePanel.AlignBottomWithPanel="True"
+            Stretch="UniformToFill"/>
+        <TextBlock 
+            Text="Pizza Bistro"
+            FontFamily="Vivaldi"
+            FontSize="150" 
+            FontWeight="ExtraBold"
+            RelativePanel.AlignHorizontalCenterWithPanel="True" 
+
+            Margin="0,50,0,0" 
+            Foreground="#FFB43C3C"/>
+        <ProgressRing 
+            IsActive="True"
+            Height="200" 
+            Width="200"
+            Foreground="#FFB43C3C"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            RelativePanel.AlignVerticalCenterWithPanel="True"/>
+        <StackPanel
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            RelativePanel.AlignVerticalCenterWithPanel="True">
+            <TextBlock 
+                Text="Loading"
+                Foreground="Black"
+                FontSize="32"
+                HorizontalAlignment="Center"/>
+            <TextBlock 
+                Text="Menus"
+                Foreground="Black"
+                FontSize="32"
+                HorizontalAlignment="Center"/>
+        </StackPanel>
+    </RelativePanel>
+</Page>
